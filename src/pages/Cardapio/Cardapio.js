@@ -6,7 +6,7 @@ const CardapioAxios = () => {
   const [erro, setErro] = useState('');
 
   useEffect(() => {
-    api.get('/pratos')
+    api.get('https://restaurante-backend-2svy.onrender.com/api/pratos')
       .then(response => {
         setPratos(response.data);
       })
