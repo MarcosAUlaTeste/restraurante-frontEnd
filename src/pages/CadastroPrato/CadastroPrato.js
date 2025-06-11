@@ -24,7 +24,7 @@ const CadastroPratoAxios = () => {
     };
 
     try {
-      await api.post('/pratos', novoPrato);
+      await api.post('https://restaurante-backend-2svy.onrender.com/api/pratos', novoPrato);
       setMensagem('✅ Prato cadastrado com sucesso!');
       // Limpa os campos
       setNomePrato('');
